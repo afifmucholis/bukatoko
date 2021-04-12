@@ -7,8 +7,8 @@ const data = {
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Koko',
-            rating: 4,
-            numReviews: 10,
+            rating: 1.3,
+            numReviews: 3,
             description: 'Bajunya koko woyo'
         },
         {
@@ -18,8 +18,8 @@ const data = {
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Koko',
-            rating: 4,
-            numReviews: 10,
+            rating: 2,
+            numReviews: 30,
             description: 'Bajunya koko woyo'
         },
         {
@@ -29,8 +29,8 @@ const data = {
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Koko',
-            rating: 4,
-            numReviews: 10,
+            rating: 2.6,
+            numReviews: 110,
             description: 'Bajunya koko woyo'
         },
         {
@@ -40,8 +40,8 @@ const data = {
             image: '/images/p1.jpg',
             price: 120,
             brand: 'Koko',
-            rating: 4,
-            numReviews: 10,
+            rating: 5,
+            numReviews: 1,
             description: 'Bajunya koko woyo'
         },
     ],
