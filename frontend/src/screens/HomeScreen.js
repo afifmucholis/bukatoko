@@ -3,7 +3,7 @@ import Product from '../components/Product';
 import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import { useDispatch, useSelector } from 'react-redux';
-import { listProducts } from '../actions/actionProducts'
+import { listProducts } from '../actions/actionProducts';
 
 export default function HomeScreen() {
   const dispatch = useDispatch();
@@ -11,8 +11,8 @@ export default function HomeScreen() {
   const { loading, error, products } = productList;
 
   useEffect(() => {
-    dispatch(listProducts());
-  }, []);
+    dispatch(listProducts({}));
+  }, [dispatch]);
   return (
     <div>
       {
@@ -21,9 +21,9 @@ export default function HomeScreen() {
         ) : error ? (
           <MessageBox variant="danger">{error}</MessageBox>
         ) : (
-          <div class="row center">
+          <div className="row center">
             { products.map(product => (
-              <Product key={product._key} product={product} ></Product>
+              <Product key={product._id} product={product} ></Product>
             ))}
           </div>
         )
